@@ -30,9 +30,6 @@ export async function POST(request: NextRequest) {
 
   orders.set(orderId, newOrder)
 
-  console.log("ORDER CREATED:", orderId)
-  console.log("ORDERS SIZE:", orders.size)
-
   return NextResponse.json(
     {
       orderId,
